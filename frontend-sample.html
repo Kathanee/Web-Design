@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('riv.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            /* color: white; */
+            font-family: 'Balsamiq Sans', cursive
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: block;
+            float: left;
+            margin: 10px 20px;
+        }
+        .left div{
+            font-size: 20px ;
+            background-image:linear-gradient(to right, #242329, #788adf);
+            margin: 5px;
+        }
+
+        .left img {
+            width: 50px;
+            height: 50px;
+            margin: 8px;
+            display: block;
+            margin: auto;
+        }
+
+        .mid {
+            /* border: 2px solid blue; */
+            display: inline;
+            /* clear:both; */
+            margin: 0px 0px 0px 50px;
+
+            width: 70%;
+        }
+
+        .navbar li {
+            list-style: none;
+            display: inline;
+            padding: 34px;
+            margin: 60px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: rgb(206, 241, 50);
+            font-size: 34px;
+            display: inline;
+        }
+
+        /* .navbar li a:hover {
+            background-color: grey;
+            color: rgb(34, 32, 32);
+            font-size: 34px;
+            text-decoration: underline;
+            padding: 3px;
+        } */
+
+        .right {
+            /* border: 2px solid green; */
+            display: block;
+            float: right;
+        }
+
+        .right button {
+            background-color: rgb(245, 124, 11);
+            border-radius: 15px;
+            padding: 10px;
+            margin: 10px 10px;
+        }
+
+        #box1 {
+            margin: 0px 0px 0px 74px;
+            background-color: rgb(241, 77, 12);
+            border-radius: 15px;
+        }
+
+        #box2 {
+            margin: 0px 0px 0px 74px;
+            background-color: rgba(1, 26, 19, 0.274);
+            border-radius: 15px;
+        }
+
+        #box3 {
+            margin: 0px 0px 0px 74px;
+            background-color: rgba(245, 164, 14, 0.281);
+            border-radius: 15px;
+        }
+
+        #box4 {
+            margin: 0px 0px 0px 74px;
+            background-color: rgb(121, 114, 221);
+            border-radius: 15px;
+        }
+
+        #box1:hover,
+        #box2:hover,
+        #box3:hover,
+        #box4:hover {
+            margin: 44px;
+            background-color: rgb(61, 54, 59);
+            border-radius: 15px;
+            text-decoration: underline;
+        }
+
+        .form { 
+           
+            /* background-size: cover;
+            background-repeat: no-repeat; */
+            /* border: 2px solid white; */
+            margin: 70px 170px;
+            width: 400px;
+            height: 450px;
+            /* background-color: #5b5558; */
+            /* opacity: 0.9; */
+            border-radius: 5px;
+        }
+
+        .form input {
+            background-image: url("rabbit.jpg");
+            display: block;
+            margin: 30px 90px 30px 80px;
+            padding: 20px 80px 20px 50px;
+            border-radius: 15px;
+            text-align: center;
+            color: rgb(247, 247, 244);
+            /* text-decoration-color: rgb(238, 238, 243); */
+            font-family: 'Balsamiq Sans', cursive;
+        }
+
+        .form button {
+            background-image: linear-gradient(to right, #6e68c2, #30ff7f);
+            margin: 0px 109px;
+            padding: 10px 80px;
+            border-radius: 20px
+        }
+
+        .form div {
+            padding: 20px;
+            margin: 20px 10px;
+            font-size: 25px;
+            color:rgb(240, 236, 14);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <img src="logo.svg" alt="">
+            <div> B M W</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li id="box1"><a href="#">Home</a></li>
+                <li id="box2"><a href="#">About</a></li>
+                <li id="box3"><a href="#">Blog</a></li>
+                <li id="box4"><a href="#">Content</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button>Contact Us </button>
+            <button>Email Us</button>
+        </div>
+    </header>
+    <div class="form">
+        <div>Fill this form to join our Community</div>
+        <form action="backend.php">
+            <input type="text" name="" id="" placeholder="Enter Your Name">
+            <input type="text" name="" id="" placeholder="Enter Your Age">
+            <input type="text" name="" id="" placeholder="Enter Your Locality">
+            <input type="text" name="" id="" placeholder="Enter Your Number">
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
